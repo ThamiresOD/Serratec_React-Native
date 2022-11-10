@@ -1,0 +1,17 @@
+Comandos para instalação:
+
+npx create-expo-app my-app
+
+Cd my-app
+
+npx expo start
+
+
+Conexão pela rede de internet:
+npx expo start --tunnel
+
+
+
+-> link de apoio:
+
+https://stackoverflow.com/questions/47966887/expo-lan-configuration-doesnt-work-for-new-reactnative-project
