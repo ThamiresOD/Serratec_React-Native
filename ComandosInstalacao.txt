@@ -15,3 +15,18 @@ npx expo start --tunnel
 -> link de apoio:
 
 https://stackoverflow.com/questions/47966887/expo-lan-configuration-doesnt-work-for-new-reactnative-project
+
+
+
+
+GitHub:
+
+git rm --cache my-app
+git rm --cache aula02
+
+
+
+1- apagar .git da pasta que deseja comitar
+2- abre o git bash na pasta anterior
+3- git rm --cache my-app  //my-app= nome da pasta que tinha o .git
+4- git add .
