@@ -1,6 +1,6 @@
 Comandos para instalação:
 
-npx create-expo-app my-app
+npx create-expo-app "nome do projeto"
 
 Cd my-app
 
