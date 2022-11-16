@@ -4,36 +4,35 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
 
   faixa01: {
-    backgroundColor: '#000',
+    backgroundColor: '#0b0b0b',
     height: 32,
   },
 
   // 1/6 -> Titulo-Menu 
   container01: {
     flexDirection: 'row',
-    backgroundColor: '#141414',
+    backgroundColor: '#121212',
     height: '10%',
     width: '100%',
   },
   
   section01: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
+    backgroundColor: '#121212',
     alignItems: 'end',
-    justifyContent: 'space-evenly',
     height: '100%',
     width: '70%',
     padding: '3%',
   },
   
   text01: {
-    color: '#eeeee4',
+    color: '#ffffff',
     fontSize: 25,
     margin: '2%',
   },
   
   text02: {
-    color: '#eeeee4',
+    color: '#ffffff',
     fontSize: 25,
     margin: '1%',
     marginStart: '1%',
@@ -41,7 +40,7 @@ export const styles = StyleSheet.create({
 
   section02: {
     flexDirection: 'row',
-    backgroundColor: '#391423',
+    backgroundColor: '#121212',
     alignItems: 'end',
     justifyContent: 'space-evenly',
     height: '100%',
@@ -54,6 +53,11 @@ export const styles = StyleSheet.create({
   /* *************************************** */
 
   //2/6 -> Filtro 
+
+
+  // Borda botão 209347
+  // Botao 15833b 'pressionado'
+  // Borda botao 696969 não pressionado
   container02: {
     flexDirection: 'row',
     backgroundColor: '#3939',
@@ -80,7 +84,7 @@ export const styles = StyleSheet.create({
   },
 
   text03: {
-    color: '#eeeee4',
+    color: '#f9f9f9',
     fontSize: 15,
     borderRadius: 5,
     borderColor: '#141414',
@@ -111,7 +115,7 @@ export const styles = StyleSheet.create({
   },
 
   text06: {
-    color: '#eeeee4',
+    color: '#f9f9f9',
     fontSize: 12,
     margin: '4%',
   },
@@ -165,34 +169,37 @@ export const styles = StyleSheet.create({
   },
 
   text07: {
-    color: '#eeeee4',
+    color: '#f9f9f9',
     fontSize: 12,
   },
 
   text08: {
-    color: '#eeeee4',
+    color: '#f9f9f9',
     fontSize: 10,
   },
 
   /* *************************************** */
 
   //5/6 -> Play (So Young) 
+  // cor da faixa da musica 444444
 
   container05: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
+    backgroundColor: '#444444',
     alignItems: 'center',
     height: '10%',
-    width: '100%',
-  },
+    width: '96%',
+    flexWrap:  'wrap',
+    marginStart: '2%',
+    borderRadius: 50,
+    },
   
   section09: {
-    flexDirection: 'row',
-    backgroundColor: '#393945',
+    backgroundColor: '#444444',
     alignItems: 'center',
     justifyContent: 'start',
     height: '100%',
-    width: '25%',
+    width: '20%',
     padding: '3%',
   },
 
@@ -201,17 +208,16 @@ export const styles = StyleSheet.create({
     alignItems: 'start',
     justifyContent: 'center',
     height: '100%',
-    width: '75%',
+    width: '50%',
     padding: '1%',
   },
 
   section11: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
+    backgroundColor: '#444444',
     alignItems: 'center',
-    justifyContent: 'start',
     height: '100%',
-    width: '25%',
+    width: '30%',
     padding: '3%',
   },
 
@@ -230,26 +236,38 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#3939',
     alignItems: 'start',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     height: '50%',
     width: '100%',
     padding: '2%',
-    marginStart:  '5%',
+   
   },
 
   section13: {
     flexDirection: 'row',
     backgroundColor: '#3939',
     alignItems: 'start',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     height: '50%',
     width: '100%',
     padding: '2%',
   },
 
   text09: {
-    color: '#eeeee4',
+    color: '#f9f9f9',
     fontSize: 10,
-    marginStart:  '5%',
+    marginStart: '4%',
+  },
+
+  text10: {
+    color: '#f9f9f9',
+    fontSize: 10,
+    marginStart: '8%',
+  },
+
+  text11: {
+    color: '#f9f9f9',
+    fontSize: 10,
+    marginStart: '3%',
   },
 })

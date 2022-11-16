@@ -1,11 +1,10 @@
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, Buttom, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
   return (
     <>
-
       <View style={styles.faixa01}></View>
 
       {/* 1/6 -> Titulo-Menu */}
@@ -30,7 +29,9 @@ export default function App() {
           <Ionicons name="ios-close-circle-outline" size={28} color="white" />
         </View>
         <View style={styles.section04}>
-          <Text style={styles.text03}>Playlists</Text>
+          <TouchableOpacity>
+            <Text style={styles.text03}>Playlists</Text>
+          </TouchableOpacity>
           <Text style={styles.text03}>Criadas Por Você</Text>
           <Text style={styles.text03}>Indicadas pelo Spo</Text>
         </View>
@@ -59,7 +60,7 @@ export default function App() {
 
           {/* Nome da Playlist e do criador */}
           <View style={styles.section08}>
-            <Text style={styles.text07}>Nome da Playlists</Text>
+            <Text style={styles.text07}>Nome da Playlist</Text>
             <Text style={styles.text08}>Nome do criador</Text>
           </View>
         </View>
@@ -72,14 +73,12 @@ export default function App() {
           <Text>Imagem da música</Text>
         </View>
 
-
         {/* Nome da música e nome da(o) artista/banda */}
-        <View>
           <View style={styles.section10}>
             <Text>So Young</Text>
             <Text style={styles.text08}>Nome do(a) artista</Text>
           </View>
-        </View>
+    
 
         {/* ícones de dispositivos, like e play/pause */}
         <View style={styles.section11}>
@@ -102,11 +101,10 @@ export default function App() {
         </View>
         <View style={styles.section13}>
           <Text style={styles.text09}>Inicio</Text>
-          <Text style={styles.text09}>Buscar</Text>
-          <Text style={styles.text09}>Sua Biblioteca</Text>
+          <Text style={styles.text10}>Buscar</Text>
+          <Text style={styles.text11}>Sua Biblioteca</Text>
         </View>
       </View>
-
     </>
   );
 }
