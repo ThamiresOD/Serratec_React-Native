@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     height: '10%',
     width: '100%',
   },
-  
+
   section01: {
     flexDirection: 'row',
     backgroundColor: '#121212',
@@ -24,13 +24,13 @@ export const styles = StyleSheet.create({
     width: '70%',
     padding: '3%',
   },
-  
+
   text01: {
     color: '#ffffff',
     fontSize: 25,
     margin: '2%',
   },
-  
+
   text02: {
     color: '#ffffff',
     fontSize: 25,
@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     paddingStart: '5%',
 
   },
-  
+
   /* *************************************** */
 
   //2/6 -> Filtro 
@@ -58,34 +58,80 @@ export const styles = StyleSheet.create({
   // Borda botão 209347
   // Botao 15833b 'pressionado'
   // Borda botao 696969 não pressionado
-  container02: {
+  containerFiltro: {
     flexDirection: 'row',
-    backgroundColor: '#3939',
+    backgroundColor: '#121212',
     alignItems: 'center',
-    height: '5%',
+    height: '6%',
     width: '100%',
   },
 
-  section03: {
-    backgroundColor: '#141414',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100%',
-    width: '15%',
-  },
-
-  section04: {
+  //Botão do fitro -> 'Playlist'
+  sectionFiltro: {
     flexDirection: 'row',
-    backgroundColor: '#3939',
+    backgroundColor: '#121212',
     alignItems: 'center',
     justifyContent: 'space-around',
     height: '100%',
-    width: '85%',
+    width: '100%',
+    paddingBottom: '2%',
+  },
+
+  buttom03: {
+    backgroundColor: '#121212',
+    borderWidth: 2,
+    borderColor: '#626262',
+    paddingLeft: '3%',
+    paddingRight: '3%',
+    paddingTop: '1%',
+    paddingBottom: '2%',
+    borderRadius: 50,
+  },
+
+  buttom04: {
+    backgroundColor: '#15833b',
+    borderWidth: 2,
+    borderColor: '#209347',
+    paddingLeft: '5%',
+    paddingRight: '5%',
+    paddingTop: '2%',
+    paddingBottom: '2%',
+    borderRadius: 50,
+  },
+
+  buttom05: {
+    backgroundColor: '#121212',
+    borderWidth: 2,
+    borderColor: '#626262',
+    paddingLeft: '5%',
+    paddingRight: '5%',
+    paddingTop: '2%',
+    paddingBottom: '2%',
+    borderRadius: 50,
+  },
+
+  buttom06: {
+    backgroundColor: '#121212',
+    borderWidth: 2,
+    borderColor: '#626262',
+    borderEndColor: '#121212',
+    paddingLeft: '5%',
+    paddingTop: '2%',
+    paddingBottom: '2%',
+    borderBottomStartRadius: 50,
+    borderTopStartRadius: 50,
   },
 
   text03: {
     color: '#f9f9f9',
-    fontSize: 15,
+    fontSize: 12,
+    borderRadius: 5,
+    borderColor: '#141414',
+  },
+
+  textExit: {
+    color: '#f9f9f9',
+    fontSize: 12,
     borderRadius: 5,
     borderColor: '#141414',
   },
@@ -94,9 +140,9 @@ export const styles = StyleSheet.create({
 
   //3/6 ->  Tocados Recentemente
 
-  container03: {
+  containerRecentes: {
     flexDirection: 'row',
-    backgroundColor: '#3939',
+    backgroundColor: '#121212',
     alignItems: 'center',
     height: '5%',
     width: '100%',
@@ -106,7 +152,7 @@ export const styles = StyleSheet.create({
 
   section05: {
     flexDirection: 'row',
-    backgroundColor: '#391423',
+    backgroundColor: '#121212',
     alignItems: 'center',
     justifyContent: 'start',
     height: '100%',
@@ -121,7 +167,7 @@ export const styles = StyleSheet.create({
   },
 
   section06: {
-    backgroundColor: '#141414',
+    backgroundColor: '#121212',
     alignItems: 'end',
     justifyContent: 'center',
     height: '100%',
@@ -137,7 +183,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#393945',
     alignItems: 'center',
-    height: '50%',
+    height: '57%',
     width: '100%',
     zIndex: 1,
   },
@@ -173,90 +219,100 @@ export const styles = StyleSheet.create({
     color: '#f9f9f9',
     fontSize: 12,
   },
-  
+
   text08: {
     color: '#f9f9f9',
     fontSize: 10,
   },
-  
+
   /* *************************************** */
-  
+
   //5/6 -> Play (So Young) 
   // cor da faixa da musica 444444
-  
-  container05: {
+
+  containerPlay: {
     flexDirection: 'row',
     backgroundColor: '#444444',
-    alignItems: 'center',
-    height: '10%',
+    height: '6%',
     width: '96%',
-    flexWrap:  'wrap',
     marginStart: '2%',
-    marginBottom: '6%',
-    borderRadius: 15,
+    borderRadius: 8,
     zIndex: 2,
   },
-  
-  section09: {
+
+  sectionMusicImg: {
+    marginStart: '3%',
     backgroundColor: '#444444',
     alignItems: 'center',
-    justifyContent: 'start',
-    height: '100%',
-    width: '20%',
-    padding: '3%',
-  },
-
-  section10: {
-    backgroundColor: '#444444',
-    alignItems: 'start',
     justifyContent: 'center',
     height: '100%',
-    width: '50%',
-    padding: '1%',
+    width: '10%',
   },
 
-  section11: {
+  sectionMusicPlay: {
+    backgroundColor: '#444444',
+    justifyContent: 'center',
+    marginStart: '3%',
+    width: '50%',
+  },
+  
+  sectionIconPlay: {
     flexDirection: 'row',
     backgroundColor: '#444444',
     alignItems: 'center',
     justifyContent: 'space-around',
+    marginStart: '3%',
     height: '100%',
     width: '30%',
     padding: '3%',
   },
-  
+
+  iconPlay: {
+    padding: '10%'
+  },
+
+  textMusicName: {
+    color: '#f9f9f9',
+    fontSize: 15,
+  },
+
+  textBandName: {
+    color: '#c4c4c4',
+    fontSize: 15,
+  },
+
   // section12: {
   //   backgroundColor: '#209347',
   //   width: '90%',
   //   padding: '3%',
   // },
 
- /* *************************************** */
+  /* *************************************** */
 
   //6/6 -> Menu do app
 
-  container06: {
+  containerMenu: {
     backgroundColor: 'translucid',
     alignItems: 'center',
     height: '10%',
     width: '100%',
-
+    zIndex: 2,
   },
-  
-  section13: {
+
+  sectionIconMenu: {
     flexDirection: 'row',
-    backgroundColor: '#3939',
+    backgroundColor: '#121212',
     alignItems: 'start',
     justifyContent: 'space-around',
     height: '50%',
     width: '100%',
     padding: '2%',
-   
+
   },
 
-  section14: {
+  sectionIconTitle: {
     flexDirection: 'row',
-    backgroundColor: '#3939',
+    backgroundColor: '#121212',
     alignItems: 'start',
     justifyContent: 'space-around',
     height: '50%',
@@ -264,19 +320,19 @@ export const styles = StyleSheet.create({
     padding: '2%',
   },
 
-  text09: {
+  textIconMenu01: {
     color: '#f9f9f9',
     fontSize: 10,
     marginStart: '4%',
   },
 
-  text10: {
+  textIconMenu02: {
     color: '#f9f9f9',
     fontSize: 10,
     marginStart: '8%',
   },
 
-  text11: {
+  textIconMenu03: {
     color: '#f9f9f9',
     fontSize: 10,
     marginStart: '3%',

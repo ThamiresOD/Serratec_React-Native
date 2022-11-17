@@ -1,27 +1,54 @@
-// import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { styles } from './style';
-import { Text, View, TouchableOpacity, TextInput } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Button
+} from 'react-native';
+import { getTasks } from './src/services/tasksClient'
+import Card from './src/components/Card';
 
-export default function App() {
-  const [nome, setNome] = useState("React Native");
-  const [nomeInput, setNomeInput] = useState('');
+const App = () => {
+  const [nome, setNome] = useState('REACT NATIVE');
+  const [tasks, setTasks] = useState([])
+
+  const fetchData = async () => {
+    const taskList = await getTasks();
+    setTasks(taskList)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [nome])
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text01}>{nome}</Text>
-      <TextInput
-        placeholder='Digite aqui seu nome'
-        onChangeText={setNomeInput}
-        value={nomeInput}
+      {/* { DATA.map( item => <Text key={item.id} style={styles.texto}>{item.title}</Text>) } */}
+      <FlatList 
+        data={tasks}
+        keyExtractor={ item => item.id}
+        renderItem={Card}
+        // renderItem={({item}) => (
+        //   <>
+        //     <Text style={styles.texto}>{item.titulo}</Text>
+        //     <Button title='DELETAR' onPress={() => setNome(nome   "a")}/>
+        //   </>
+        // )}
       />
-      <TouchableOpacity
-        style={styles.buttom}
-        onPress={() => setNome(nomeInput)}>
-        <Text style={styles.text01}>Clique Aqui!</Text>
-      </TouchableOpacity>
-      {/* <StatusBar style="auto" /> */}
+      <Text style={styles.texto}>{nome}</Text>
     </View>
   );
-}
+};
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#131313"
+  },
+  texto: {
+    color: "#fff"
+  }
+});
+
+export default App;

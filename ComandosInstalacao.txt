@@ -18,6 +18,15 @@ https://stackoverflow.com/questions/47966887/expo-lan-configuration-doesnt-work-
 
 
 
+Rotas:
+    npm install @react-navigation/native
+
+    npx expo install react-native-screens react-native-safe-area-context  //Expo
+    npm install react-native-screens react-native-safe-area-context //Cli
+
+    npm install @react-navigation/native-stack
+
+
 
 GitHub:
 

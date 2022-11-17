@@ -1,6 +1,9 @@
-import { ScrollView, Text, View, Buttom, TouchableOpacity } from 'react-native';
+import { ScrollView, Text, View, Buttom, TouchableOpacity, Image } from 'react-native';
 import { styles } from './style';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import imgPerfil from './images/Perfil.jpg';
+import imgParaponeraClavata from './images/ParaponeraClavata.jpg';
+import imgSoYoung from './images/SoYoung.jpg';
 
 export default function App() {
   return (
@@ -11,7 +14,7 @@ export default function App() {
       <View style={styles.container01}>
         {/* Perfil e título da página */}
         <View style={styles.section01}>
-          <Text style={styles.text01}>👻</Text>
+          <Image source={imgPerfil} style={{ width: 50, height: 50, marginBottom: '0%' }} />
           <Text style={styles.text02}>Sua Biblioteca</Text>
         </View>
 
@@ -23,21 +26,25 @@ export default function App() {
       </View>
 
       {/* 2/6 -> Filtro */}
-      <View style={styles.container02}>
-        <View style={styles.section03}>
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-        </View>
-        <View style={styles.section04}>
-          <TouchableOpacity>
+      <View style={styles.containerFiltro}>
+        <View style={styles.sectionFiltro}>
+          <TouchableOpacity style={styles.buttom03}>
+            <Text style={styles.textExit}>x</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttom04}>
             <Text style={styles.text03}>Playlists</Text>
           </TouchableOpacity>
-          <Text style={styles.text03}>Criadas Por Você</Text>
-          <Text style={styles.text03}>Indicadas pelo Spo</Text>
+          <TouchableOpacity style={styles.buttom05}>
+            <Text style={styles.text03}>Criadas por você</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttom06}>
+            <Text style={styles.text03}>Indicadas pelo Spo</Text>
+          </TouchableOpacity>
         </View>
       </View>
 
       {/* 3/6 ->  Tocados Recentemente */}
-      <View style={styles.container03}>
+      <View style={styles.containerRecentes}>
         <View style={styles.section05}>
           <Ionicons name="swap-vertical" size={15} color="white" />
           <Text style={styles.text06}>Tocados Recentemente</Text>
@@ -71,41 +78,41 @@ export default function App() {
 
 
       {/* 5/6 -> Play (So Young) */}
-      <View style={styles.container05}>
-        <View style={styles.section09}>
-          <Text>Imagem da música</Text>
-        </View>
-
-        {/* Nome da música e nome da(o) artista/banda */}
-          <View style={styles.section10}>
-            <Text>So Young</Text>
-            <Text style={styles.text08}>Nome do(a) artista</Text>
+      <View style={styles.containerPlay}>
+          <View style={styles.sectionMusicImg}>
+            <Image source={imgSoYoung} style={{ width: 40, height: 40, marginBottom: '0%' }} />
           </View>
-    
 
-        {/* ícones de dispositivos, like e play/pause */}
-        <View style={styles.section11}>
-          <Ionicons name="desktop-outline" size={23} color="white" />
-          <Ionicons name="heart" size={25} color="#209347" />
-          <Ionicons name="pause" size={25} color="white" />
-        </View>
+          {/* Nome da música e nome da(o) artista/banda */}
+          <View style={styles.sectionMusicPlay}>
+            <Text style={styles.textMusicName}>So Young</Text>
+            <Text style={styles.textBandName}>Portugal, The an</Text>
+          </View>
 
-        {/* Barra de tempo da música já reproduzida */}
-        <View style={styles.section12}></View>
+
+          {/* ícones de dispositivos, like e play/pause */}
+          <View style={styles.sectionIconPlay}>
+            <Ionicons name="desktop-outline" size={23} color="white" style={styles.iconPlay}/>
+            <Ionicons name="heart" size={25} color="#209347" style={styles.iconPlay}/>
+            <Ionicons name="pause" size={25} color="white" style={styles.iconPlay}/>
+          </View>
+
+          {/* Barra de tempo da música já reproduzida */}
+          {/* <View style={styles.section12}></View> */}
       </View>
 
 
       {/* 6/6 -> Menu do app*/}
-      <View style={styles.container06}>
-        <View style={styles.section13}>
+      <View style={styles.containerMenu}>
+        <View style={styles.sectionIconMenu}>
           <Ionicons name="md-home-outline" size={28} color="white" />
           <Ionicons name="search" size={28} color="white" />
           <Ionicons name="library-outline" size={28} color="white" />
         </View>
-        <View style={styles.section14}>
-          <Text style={styles.text09}>Inicio</Text>
-          <Text style={styles.text10}>Buscar</Text>
-          <Text style={styles.text11}>Sua Biblioteca</Text>
+        <View style={styles.sectionIconTitle}>
+          <Text style={styles.textIconMenu01}>Inicio</Text>
+          <Text style={styles.textIconMenu02}>Buscar</Text>
+          <Text style={styles.textIconMenu03}>Sua Biblioteca</Text>
         </View>
       </View>
 
