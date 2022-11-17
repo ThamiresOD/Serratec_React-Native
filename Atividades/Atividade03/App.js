@@ -9,7 +9,6 @@ export default function App() {
 
       {/* 1/6 -> Titulo-Menu */}
       <View style={styles.container01}>
-
         {/* Perfil e título da página */}
         <View style={styles.section01}>
           <Text style={styles.text01}>👻</Text>
@@ -40,16 +39,20 @@ export default function App() {
       {/* 3/6 ->  Tocados Recentemente */}
       <View style={styles.container03}>
         <View style={styles.section05}>
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
+          <Ionicons name="swap-vertical" size={15} color="white" />
           <Text style={styles.text06}>Tocados Recentemente</Text>
         </View>
         <View style={styles.section06}>
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
+          <Ionicons name="grid-outline" size={15} color="white" />
         </View>
       </View>
 
 
       {/* 4/6 -> Playlists */}
+
+      {/* //arrow-down-circle-sharp icon */}
+
+
       <View style={styles.containerFlex}>
         <View style={styles.container04}>
 
@@ -82,28 +85,32 @@ export default function App() {
 
         {/* ícones de dispositivos, like e play/pause */}
         <View style={styles.section11}>
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
+          <Ionicons name="desktop-outline" size={23} color="white" />
+          <Ionicons name="heart" size={25} color="#209347" />
+          <Ionicons name="pause" size={25} color="white" />
         </View>
 
         {/* Barra de tempo da música já reproduzida */}
-        <View>Barra tempo da música</View> //wrap
+        <View style={styles.section12}></View>
       </View>
 
 
       {/* 6/6 -> Menu do app*/}
       <View style={styles.container06}>
-        <View style={styles.section12}>
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-          <Ionicons name="ios-close-circle-outline" size={28} color="white" />
-        </View>
         <View style={styles.section13}>
+          <Ionicons name="md-home-outline" size={28} color="white" />
+          <Ionicons name="search" size={28} color="white" />
+          <Ionicons name="library-outline" size={28} color="white" />
+        </View>
+        <View style={styles.section14}>
           <Text style={styles.text09}>Inicio</Text>
           <Text style={styles.text10}>Buscar</Text>
           <Text style={styles.text11}>Sua Biblioteca</Text>
         </View>
+      </View>
+
+      <View style={styles.faixa02}>
+        <View style={styles.faixa03}></View>
       </View>
     </>
   );

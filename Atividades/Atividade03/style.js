@@ -139,6 +139,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     height: '50%',
     width: '100%',
+    zIndex: 1,
   },
 
   container04: {
@@ -172,17 +173,17 @@ export const styles = StyleSheet.create({
     color: '#f9f9f9',
     fontSize: 12,
   },
-
+  
   text08: {
     color: '#f9f9f9',
     fontSize: 10,
   },
-
+  
   /* *************************************** */
-
+  
   //5/6 -> Play (So Young) 
   // cor da faixa da musica 444444
-
+  
   container05: {
     flexDirection: 'row',
     backgroundColor: '#444444',
@@ -191,8 +192,10 @@ export const styles = StyleSheet.create({
     width: '96%',
     flexWrap:  'wrap',
     marginStart: '2%',
-    borderRadius: 50,
-    },
+    marginBottom: '6%',
+    borderRadius: 15,
+    zIndex: 2,
+  },
   
   section09: {
     backgroundColor: '#444444',
@@ -204,7 +207,7 @@ export const styles = StyleSheet.create({
   },
 
   section10: {
-    backgroundColor: '#3939',
+    backgroundColor: '#444444',
     alignItems: 'start',
     justifyContent: 'center',
     height: '100%',
@@ -216,23 +219,31 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#444444',
     alignItems: 'center',
+    justifyContent: 'space-around',
     height: '100%',
     width: '30%',
     padding: '3%',
   },
+  
+  // section12: {
+  //   backgroundColor: '#209347',
+  //   width: '90%',
+  //   padding: '3%',
+  // },
 
  /* *************************************** */
 
   //6/6 -> Menu do app
 
   container06: {
-    backgroundColor: '#3939',
+    backgroundColor: 'translucid',
     alignItems: 'center',
-    height: '8%',
+    height: '10%',
     width: '100%',
+
   },
   
-  section12: {
+  section13: {
     flexDirection: 'row',
     backgroundColor: '#3939',
     alignItems: 'start',
@@ -243,7 +254,7 @@ export const styles = StyleSheet.create({
    
   },
 
-  section13: {
+  section14: {
     flexDirection: 'row',
     backgroundColor: '#3939',
     alignItems: 'start',
@@ -269,5 +280,19 @@ export const styles = StyleSheet.create({
     color: '#f9f9f9',
     fontSize: 10,
     marginStart: '3%',
+  },
+
+  faixa02: {
+    backgroundColor: '#444d52',
+    height: '3%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  faixa03: {
+    backgroundColor: '#ffffff',
+    height: '20%',
+    width: '30%',
+    borderRadius: 15,
   },
 })
