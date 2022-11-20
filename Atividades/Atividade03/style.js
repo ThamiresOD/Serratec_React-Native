@@ -53,11 +53,6 @@ export const styles = StyleSheet.create({
   /* *************************************** */
 
   //2/6 -> Filtro 
-
-
-  // Borda botão 209347
-  // Botao 15833b 'pressionado'
-  // Borda botao 696969 não pressionado
   containerFiltro: {
     flexDirection: 'row',
     backgroundColor: '#121212',
@@ -179,50 +174,59 @@ export const styles = StyleSheet.create({
 
   //4/6 -> Playlists
 
-  containerFlex: {
+  containerPlaylists: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
-    alignItems: 'center',
+    backgroundColor: '#121212',
     height: '57%',
     width: '100%',
-    zIndex: 1,
+    zIndex: 2,
   },
-
-  container04: {
+  
+  containerPlaylist: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
+    flexWrap: 'wrap',
+    backgroundColor: '#121212',
     alignItems: 'center',
-    height: '10%',
+    height: '8%',
     width: '100%',
+    marginTop: '2%',
   },
-
-  section07: {
+  
+  sectionPlaylistImg: {
     flexDirection: 'row',
-    backgroundColor: '#393945',
+    backgroundColor: '#121212',
     alignItems: 'center',
     justifyContent: 'start',
     height: '100%',
-    width: '25%',
+    width: '20%',
     padding: '3%',
+    marginTop: '10%',
   },
-
-  section08: {
-    backgroundColor: '#3939',
+  
+  sectionPlaylistName: {
+    backgroundColor: '#121212',
     alignItems: 'start',
     justifyContent: 'center',
     height: '100%',
     width: '75%',
     padding: '1%',
+    marginStart: '1%',
+    marginTop: '10%',
   },
 
-  text07: {
+  textPlaylistName: {
     color: '#f9f9f9',
-    fontSize: 12,
+    fontSize: 18,
   },
 
-  text08: {
-    color: '#f9f9f9',
-    fontSize: 10,
+  textPlaylistNameSelected: {
+    color: '#209347',
+    fontSize: 18,
+  },
+
+  textCreatorName: {
+    color: '#a4a4a4',
+    fontSize: 14,
   },
 
   /* *************************************** */
@@ -237,7 +241,7 @@ export const styles = StyleSheet.create({
     width: '96%',
     marginStart: '2%',
     borderRadius: 8,
-    zIndex: 2,
+    zIndex: 1,
   },
 
   sectionMusicImg: {
@@ -255,7 +259,7 @@ export const styles = StyleSheet.create({
     marginStart: '3%',
     width: '50%',
   },
-  
+
   sectionIconPlay: {
     flexDirection: 'row',
     backgroundColor: '#444444',
@@ -281,11 +285,6 @@ export const styles = StyleSheet.create({
     fontSize: 15,
   },
 
-  // section12: {
-  //   backgroundColor: '#209347',
-  //   width: '90%',
-  //   padding: '3%',
-  // },
 
   /* *************************************** */
 
@@ -294,7 +293,7 @@ export const styles = StyleSheet.create({
   containerMenu: {
     backgroundColor: 'translucid',
     alignItems: 'center',
-    height: '10%',
+    height: '8%',
     width: '100%',
     zIndex: 2,
   },
@@ -307,7 +306,6 @@ export const styles = StyleSheet.create({
     height: '50%',
     width: '100%',
     padding: '2%',
-
   },
 
   sectionIconTitle: {
@@ -322,21 +320,24 @@ export const styles = StyleSheet.create({
 
   textIconMenu01: {
     color: '#f9f9f9',
-    fontSize: 10,
-    marginStart: '4%',
+    fontSize: 12,
+    marginStart: '6%',
   },
 
   textIconMenu02: {
     color: '#f9f9f9',
-    fontSize: 10,
-    marginStart: '8%',
+    fontSize: 12,
+    marginStart: '10%',
   },
 
   textIconMenu03: {
     color: '#f9f9f9',
-    fontSize: 10,
+    fontSize: 12,
     marginStart: '3%',
   },
+
+
+  /* *************************************** */
 
   faixa02: {
     backgroundColor: '#444d52',

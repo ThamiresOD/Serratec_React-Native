@@ -2,7 +2,15 @@ import { ScrollView, Text, View, Buttom, TouchableOpacity, Image } from 'react-n
 import { styles } from './style';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import imgPerfil from './images/Perfil.jpg';
+import imgCurtidas from './images/Curtidas.jpg';
 import imgParaponeraClavata from './images/ParaponeraClavata.jpg';
+import imgMyrmecia from './images/Myrmecia.jpg';
+import imgLinepithemaHumile from './images/LinepithemaHumile.jpg';
+import imgGabrielaThamires from './images/GabrielaThamires.jpg';
+import imgRomuloThamires from './images/RomuloThamires.jpg';
+import imgCassiaEller from './images/CassiaEller.jpg';
+import imgLeX from './images/LeX.jpg';
+
 import imgSoYoung from './images/SoYoung.jpg';
 
 export default function App() {
@@ -57,48 +65,112 @@ export default function App() {
 
       {/* 4/6 -> Playlists */}
 
-      {/* //arrow-down-circle-sharp icon */}
-
-
-      <View style={styles.containerFlex}>
-        <View style={styles.container04}>
-
-          {/* Imagem do álbum */}
-          <View style={styles.section07}>
-            <Text>Imagem do álbum x1</Text>
+      <View style={styles.containerPlaylists}>
+        <View style={styles.containerPlaylist}>
+          {/* Imagem do álbum 01 */}
+          <View style={styles.sectionPlaylistImg}>
+            <Image source={imgCurtidas} style={{ width: 70, height: 70, marginBottom: '0%' }} />
           </View>
 
-          {/* Nome da Playlist e do criador */}
-          <View style={styles.section08}>
-            <Text style={styles.text07}>Nome da Playlist</Text>
-            <Text style={styles.text08}>Nome do criador</Text>
+          {/* Nome da Playlist e do criador 01 */}
+          <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>Músicas Curtidas</Text>
+            <Text style={styles.textCreatorName}>📌463 músicas</Text>
           </View>
+
+          {/* Imagem do álbum 02 */}
+          <View style={styles.sectionPlaylistImg}>
+            <Image source={imgParaponeraClavata} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View>
+
+          {/* Nome da Playlist e do criador 02 */}
+          <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistNameSelected}>Paraponera Clavata</Text>
+            <Text style={styles.textCreatorName}>📌⬇️Thamires Ouverney</Text>
+          </View>
+
+          {/* Imagem do álbum 03 */}
+          <View style={styles.sectionPlaylistImg}>
+            <Image source={imgMyrmecia} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View>
+
+          {/* Nome da Playlist e do criador 03 */}
+          <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>Myrmecia</Text>
+            <Text style={styles.textCreatorName}>Thamires Ouverney</Text>
+          </View>
+
+          {/* Imagem do álbum 04 */}
+          <View style={styles.sectionPlaylistImg}>
+            <Image source={imgLinepithemaHumile} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View>
+
+          {/* Nome da Playlist e do criador 04 */}
+          <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>Linepithema Humile</Text>
+            <Text style={styles.textCreatorName}>Thamires Ouverney</Text>
+          </View>
+
+          {/* Imagem do álbum 05 */}
+          {/* <View style={styles.sectionPlaylistImg}>
+            <Image source={imgGabrielaThamires} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View> */}
+
+          {/* Nome da Playlist e do criador 05 */}
+          {/* <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>Gabriela + Thamires</Text>
+            <Text style={styles.textCreatorName}>Spotify</Text>
+          </View> */}
+
+          {/* Imagem do álbum 06 */}
+          {/* <View style={styles.sectionPlaylistImg}>
+            <Image source={imgRomuloThamires} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View> */}
+
+          {/* Nome da Playlist e do criador 06 */}
+          {/* <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>Romulo + Thamires</Text>
+            <Text style={styles.textCreatorName}>Spotify</Text>
+          </View> */}
+
+          {/* Imagem do álbum 07 */}
+          {/* <View style={styles.sectionPlaylistImg}>
+            <Image source={imgLeX} style={{ width: 70, height: 70, marginBottom: '0%' }} />
+          </View> */}
+
+          {/* Nome da Playlist e do criador 07 */}
+          {/* <View style={styles.sectionPlaylistName}>
+            <Text style={styles.textPlaylistName}>L & X</Text>
+            <Text style={styles.textCreatorName}></Text>
+          </View> */}
         </View>
       </View>
 
 
+
+
       {/* 5/6 -> Play (So Young) */}
       <View style={styles.containerPlay}>
-          <View style={styles.sectionMusicImg}>
-            <Image source={imgSoYoung} style={{ width: 40, height: 40, marginBottom: '0%' }} />
-          </View>
+        <View style={styles.sectionMusicImg}>
+          <Image source={imgSoYoung} style={{ width: 40, height: 40, marginBottom: '0%' }} />
+        </View>
 
-          {/* Nome da música e nome da(o) artista/banda */}
-          <View style={styles.sectionMusicPlay}>
-            <Text style={styles.textMusicName}>So Young</Text>
-            <Text style={styles.textBandName}>Portugal, The an</Text>
-          </View>
+        {/* Nome da música e nome da(o) artista/banda */}
+        <View style={styles.sectionMusicPlay}>
+          <Text style={styles.textMusicName}>So Young</Text>
+          <Text style={styles.textBandName}>Portugal, The Man</Text>
+        </View>
 
 
-          {/* ícones de dispositivos, like e play/pause */}
-          <View style={styles.sectionIconPlay}>
-            <Ionicons name="desktop-outline" size={23} color="white" style={styles.iconPlay}/>
-            <Ionicons name="heart" size={25} color="#209347" style={styles.iconPlay}/>
-            <Ionicons name="pause" size={25} color="white" style={styles.iconPlay}/>
-          </View>
+        {/* ícones de dispositivos, like e play/pause */}
+        <View style={styles.sectionIconPlay}>
+          <Ionicons name="desktop-outline" size={23} color="white" style={styles.iconPlay} />
+          <Ionicons name="heart" size={25} color="#209347" style={styles.iconPlay} />
+          <Ionicons name="pause" size={25} color="white" style={styles.iconPlay} />
+        </View>
 
-          {/* Barra de tempo da música já reproduzida */}
-          {/* <View style={styles.section12}></View> */}
+        {/* Barra de tempo da música já reproduzida */}
+        {/* <View style={styles.section12}></View> */}
       </View>
 
 
