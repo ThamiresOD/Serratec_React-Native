@@ -19,15 +19,15 @@ export default function App() {
       <View style={styles.faixa01}></View>
 
       {/* 1/6 -> Titulo-Menu */}
-      <View style={styles.container01}>
+      <View style={styles.containerPerfil}>
         {/* Perfil e título da página */}
-        <View style={styles.section01}>
+        <View style={styles.sectionPerfil}>
           <Image source={imgPerfil} style={{ width: 50, height: 50, marginBottom: '0%' }} />
-          <Text style={styles.text02}>Sua Biblioteca</Text>
+          <Text style={styles.textBiblioteca}>Sua Biblioteca</Text>
         </View>
 
         {/* Icones de pesquisa e mais opções */}
-        <View style={styles.section02}>
+        <View style={styles.sectionSearch}>
           <Ionicons name="search" size={28} color="white" />
           <Ionicons name="add-outline" size={32} color="white" />
         </View>
@@ -36,28 +36,28 @@ export default function App() {
       {/* 2/6 -> Filtro */}
       <View style={styles.containerFiltro}>
         <View style={styles.sectionFiltro}>
-          <TouchableOpacity style={styles.buttom03}>
+          <TouchableOpacity style={styles.buttomX}>
             <Text style={styles.textExit}>x</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.buttom04}>
-            <Text style={styles.text03}>Playlists</Text>
+          <TouchableOpacity style={styles.buttomPlaylist}>
+            <Text style={styles.textFiltro}>Playlists</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.buttom05}>
-            <Text style={styles.text03}>Criadas por você</Text>
+          <TouchableOpacity style={styles.buttomCriadas}>
+            <Text style={styles.textFiltro}>Criadas por você</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.buttom06}>
-            <Text style={styles.text03}>Indicadas pelo Spo</Text>
+          <TouchableOpacity style={styles.buttomIndicadas}>
+            <Text style={styles.textFiltro}>Indicadas pelo Spo</Text>
           </TouchableOpacity>
         </View>
       </View>
 
       {/* 3/6 ->  Tocados Recentemente */}
       <View style={styles.containerRecentes}>
-        <View style={styles.section05}>
+        <View style={styles.sectionRecentes}>
           <Ionicons name="swap-vertical" size={15} color="white" />
-          <Text style={styles.text06}>Tocados Recentemente</Text>
+          <Text style={styles.textRecentes}>Tocados Recentemente</Text>
         </View>
-        <View style={styles.section06}>
+        <View style={styles.sectionGrid}>
           <Ionicons name="grid-outline" size={15} color="white" />
         </View>
       </View>

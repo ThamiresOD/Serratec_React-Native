@@ -9,14 +9,14 @@ export const styles = StyleSheet.create({
   },
 
   // 1/6 -> Titulo-Menu 
-  container01: {
+  containerPerfil: {
     flexDirection: 'row',
     backgroundColor: '#121212',
     height: '10%',
     width: '100%',
   },
 
-  section01: {
+  sectionPerfil: {
     flexDirection: 'row',
     backgroundColor: '#121212',
     alignItems: 'end',
@@ -31,14 +31,14 @@ export const styles = StyleSheet.create({
     margin: '2%',
   },
 
-  text02: {
+  textBiblioteca: {
     color: '#ffffff',
     fontSize: 25,
     margin: '1%',
     marginStart: '1%',
   },
 
-  section02: {
+  sectionSearch: {
     flexDirection: 'row',
     backgroundColor: '#121212',
     alignItems: 'end',
@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
     paddingBottom: '2%',
   },
 
-  buttom03: {
+  buttomX: {
     backgroundColor: '#121212',
     borderWidth: 2,
     borderColor: '#626262',
@@ -83,7 +83,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
   },
 
-  buttom04: {
+  buttomPlaylist: {
     backgroundColor: '#15833b',
     borderWidth: 2,
     borderColor: '#209347',
@@ -94,7 +94,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
   },
 
-  buttom05: {
+  buttomCriadas: {
     backgroundColor: '#121212',
     borderWidth: 2,
     borderColor: '#626262',
@@ -105,7 +105,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
   },
 
-  buttom06: {
+  buttomIndicadas: {
     backgroundColor: '#121212',
     borderWidth: 2,
     borderColor: '#626262',
@@ -117,7 +117,7 @@ export const styles = StyleSheet.create({
     borderTopStartRadius: 50,
   },
 
-  text03: {
+  textFiltro: {
     color: '#f9f9f9',
     fontSize: 12,
     borderRadius: 5,
@@ -145,7 +145,7 @@ export const styles = StyleSheet.create({
     borderStartColor: '#000',
   },
 
-  section05: {
+  sectionRecentes: {
     flexDirection: 'row',
     backgroundColor: '#121212',
     alignItems: 'center',
@@ -155,13 +155,13 @@ export const styles = StyleSheet.create({
     padding: '3%',
   },
 
-  text06: {
+  textRecentes: {
     color: '#f9f9f9',
     fontSize: 12,
     margin: '4%',
   },
 
-  section06: {
+  sectionGrid: {
     backgroundColor: '#121212',
     alignItems: 'end',
     justifyContent: 'center',
